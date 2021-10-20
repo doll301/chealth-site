@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+
+
+    <script>
+        const aboutPageSections = ["leadership", "technology", "marketing", "design"]
+        function changeVisibility(div_name) {
+            document.getElementById(div_name+"-div").style.display = "block";
+            document.getElementById(div_name+"-button").style.backgroundColor = "darkblue";
+            document.getElementById(div_name+"-button").style.color = "white";
+            for (let i = 0; i < aboutPageSections.length; i++) {
+                if (aboutPageSections[i] != div_name) {
+                    document.getElementById(aboutPageSections[i]+"-div").style.display = "none";
+                    document.getElementById(aboutPageSections[i]+"-button").style.backgroundColor = "lightgray";
+                    document.getElementById(aboutPageSections[i]+"-button").style.color = "black";
+                }
+            }
+        }
+    </script>
+</head>
+    <body>
+      <header class="header">
+              <nav class="navbar">
+                  <a href="index.html" class="nav-logo">chat health</a>
+                  <ul class="nav-menu">
+                      <li class="nav-item">
+                          <a href="about.html" class="nav-link">About Us</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="students.html" class="nav-link">For Students</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="universities.html" class="nav-link">For Universities</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="mailto:chathealth1@gmail.com" class="nav-link"><button style="background-color: #DAEDFF; color: #4E686B; border-radius: 15px; margin: 5px; padding: 10px; padding-left: 20px; padding-right: 20px; font-family: 'DM Sans', Sans Serif; font-size: 1.6rem; font-weight: 400; border: none;">Contact</button>
+                          </a>
+                      </li>
+                  </ul>
+                  <div class="hamburger">
+                      <span class="bar"></span>
+                      <span class="bar"></span>
+                      <span class="bar"></span>
+                  </div>
+              </nav>
+      </header>
+
+
+    <div class="landing-page">
+        <div style="width:100%;">
+            <div class="landing-page-div">
+                <p class="landing-page-header">About Us</h1>
+                <p class="landing-page-subheader" style="margin: 40px;">
+                    A Digital Bridge between University Health and Student Wellness
+                </p>
+                <div>
+                    <div class="landing-page-button-container"><button class="partner-button"><h1 style="font-weight: 100; padding-left: 20px; padding-right:20px;">Join our team</h1></button></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div style="background-color:#F0F0F0;" class="about-page-container">
+        <div class="about-page-inner-container">
+            <p class="about-page-heading">A non-profit run by students</h1>
+            <p class="about-page-subheading">
+            Chat Health cares about our community. Through an empathy and technology-driven approach, we empower students to receive relevant health care on campus.
+            </p>
+        </div>
+    </div>
+    <div style="background-color:#DCDCDC;" class="about-page-container">
+        <div class="about-page-inner-container">
+            <p class="about-page-heading">Our Mission</h1>
+            <p class="about-page-subheading">
+                In 2020, over the span of 6 months, we developed a SMS text bot to bring real time COVID resources to 40,000 UMD community members. We plan to bring the same ideology into student facing and empathetic health technology, through our mobile app.
+            </p>
+        </div>
+    </div>
+    <div class="about-page-container">
+        <div class="about-page-inner-container">
+            <p class="about-page-heading">Our Values</h1>
+            <p class="about-page-subheading">
+                Through empathetic and culturally-competent technology, Chat Health seeks to help college students, and especially first-generation and BIPOC students, access relevant health information and better connect with healthcare services on their university campuses.
+            </p>
+        </div>
+    </div>
+    <div style="background-color:#9AC9F4" class="about-page-container">
+        <div class="about-page-inner-container">
+                <p class="about-page-heading">Want to support our cause?</p>
+                <p class="about-page-subheading">
+                    Chat Health runs on volunteer work from students who wish to make a difference.
+                </p>
+                <div>
+                    <div class="landing-page-button-container"><button class="blue-button">Contribute</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about-page-team-container">
+        <div class="about-page-team-inner">
+            <p style="padding-top:60px;" class="about-page-heading">Meet Our Team</h1>
+            <div style="text-align:center;">
+                <button id="leadership-button" onclick="changeVisibility('leadership')" style="background-color:darkblue; color:white;" class="team-button">Leadership</button><button onclick="changeVisibility('technology')" id="technology-button" class="team-button">Technology</button><button onclick="changeVisibility('marketing')" id="marketing-button" class="team-button"> Marketing</button><button onclick="changeVisibility('design')" id="design-button" class="team-button">Design</button>
+            </div>
+            <div class="about-team-section-div">
+                <div class="col-12" id="leadership-div" style="display:block"> <!--PUZZLE PIECE - Four circles, side by side, responsive-->
+                    <div class="col-3" style="padding: 20px;">
+                        <div class="content">
+                        <img src="veeraj_shah.jpg" alt="Leadership figure: Veeraj Shah" class="about-team-img">
+                        <h5 class = "content-header">
+                            Name
+                        </h5>
+                        <h6 class="content-sub">
+                            Leadership
+                        </h6>
+                        </div>
+                    </div>
+
+                    <div class="col-3" style="padding: 20px;">
+                        <div class="content">
+                        <img src="veeraj_shah.jpg" alt="Leadership figure: Veeraj Shah" class="about-team-img">
+                        <h5 class = "content-header">
+                            Name
+                        </h5>
+                        <h6 class="content-sub">
+                            Leadership
+                        </h6>
+                        </div>
+                    </div>
+
+                    <div class="col-3" style="padding: 20px;">
+                        <div class="content">
+                        <img src="veeraj_shah.jpg" alt="Leadership figure: Veeraj Shah" class="about-team-img">
+                        <h5 class = "content-header">
+                            Name
+                        </h5>
+                        <h6 class="content-sub">
+                            Leadership
+                        </h6>
+                        </div>
+                    </div>
+
+                    <div class="col-3" style="padding: 20px;">
+                        <div class="content">
+                        <img src="veeraj_shah.jpg" alt="Leadership figure: Veeraj Shah" class="about-team-img">
+                        <h5 class = "content-header">
+                            Name
+                        </h5>
+                        <h6 class="content-sub">
+                            Leadership
+                        </h6>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="team-button-container"><button class="team-button">See our pitch at CUNY demo day</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-team-section-div">
+                <div class="col-12" id="technology-div" style="display:none"> <!--PUZZLE PIECE - Four circles, side by side, responsive-->
+                    <div class="col-3" style="padding: 20px;">
+                        <div class="content">
+                        <img src="veeraj_shah.jpg" alt="Leadership figure: Veeraj Shah" class="about-team-img">
+                        <h5 class = "content-header">
+                            Name
+                        </h5>
+                        <h6 class="content-sub">
+                            Technology
+                        </h6>
+                        </div>
+                    </div>
+
+                    <div class="col-3" style="padding: 20px;">
+                        <div class="content">
+                        <img src="veeraj_shah.jpg" alt="Leadership figure: Veeraj Shah" class="about-team-img">
+                        <h5 class = "content-header">
+                            Name
+                        </h5>
+                        <h6 class="content-sub">
+                            Technology
+                        </h6>
+                        </div>
+                    </div>
+
+                    <div class="col-3" style="padding: 20px;">
+                        <div class="content">
+                        <img src="veeraj_shah.jpg" alt="Leadership figure: Veeraj Shah" class="about-team-img">
+                        <h5 class = "content-header">
+                            Name
+                        </h5>
+                        <h6 class="content-sub">
+                            Technology
+                        </h6>
+                        </div>
+                    </div>
+
+                    <div class="col-3" style="padding: 20px;">
+                        <div class="content">
+                        <img src="veeraj_shah.jpg" alt="Leadership figure: Veeraj Shah" class="about-team-img">
+                        <h5 class = "content-header">
+                            Name
+                        </h5>
+                        <h6 class="content-sub">
+                            Technology
+                        </h6>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="team-button-container"><button class="team-button">See our pitch at CUNY demo day</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-team-section-div">
+                <div class="col-12" id="marketing-div" style="display:none"> <!--PUZZLE PIECE - Four circles, side by side, responsive-->
+                    <div class="col-3" style="padding: 20px;">
+                        <div class="content">
+                        <img src="veeraj_shah.jpg" alt="Leadership figure: Veeraj Shah" class="about-team-img">
+                        <h5 class = "content-header">
+                            Name
+                        </h5>
+                        <h6 class="content-sub">
+                            Marketing
+                        </h6>
+                        </div>
+                    </div>
+
+                    <div class="col-3" style="padding: 20px;">
+                        <div class="content">
+                        <img src="veeraj_shah.jpg" alt="Leadership figure: Veeraj Shah" class="about-team-img">
+                        <h5 class = "content-header">
+                            Name
+                        </h5>
+                        <h6 class="content-sub">
+                            Marketing
+                        </h6>
+                        </div>
+                    </div>
+
+                    <div class="col-3" style="padding: 20px;">
+                        <div class="content">
+                        <img src="veeraj_shah.jpg" alt="Leadership figure: Veeraj Shah" class="about-team-img">
+                        <h5 class = "content-header">
+                            Name
+                        </h5>
+                        <h6 class="content-sub">
+                            Marketing
+                        </h6>
+                        </div>
+                    </div>
+
+                    <div class="col-3" style="padding: 20px;">
+                        <div class="content">
+                        <img src="veeraj_shah.jpg" alt="Leadership figure: Veeraj Shah" class="about-team-img">
+                        <h5 class = "content-header">
+                            Name
+                        </h5>
+                        <h6 class="content-sub">
+                            Marketing
+                        </h6>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="team-button-container"><button class="team-button">See our pitch at CUNY demo day</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-team-section-div">
+                <div class="col-12" id="design-div" style="display:none"> <!--PUZZLE PIECE - Four circles, side by side, responsive-->
+                    <div class="col-3" style="padding: 20px;">
+                        <div class="content">
+                        <img src="veeraj_shah.jpg" alt="Leadership figure: Veeraj Shah" class="about-team-img">
+                        <h5 class = "content-header">
+                            Name
+                        </h5>
+                        <h6 class="content-sub">
+                            Design
+                        </h6>
+                        </div>
+                    </div>
+
+                    <div class="col-3" style="padding: 20px;">
+                        <div class="content">
+                        <img src="veeraj_shah.jpg" alt="Leadership figure: Veeraj Shah" class="about-team-img">
+                        <h5 class = "content-header">
+                            Name
+                        </h5>
+                        <h6 class="content-sub">
+                            Design
+                        </h6>
+                        </div>
+                    </div>
+
+                    <div class="col-3" style="padding: 20px;">
+                        <div class="content">
+                        <img src="veeraj_shah.jpg" alt="Leadership figure: Veeraj Shah" class="about-team-img">
+                        <h5 class = "content-header">
+                            Name
+                        </h5>
+                        <h6 class="content-sub">
+                            Design
+                        </h6>
+                        </div>
+                    </div>
+
+                    <div class="col-3" style="padding: 20px;">
+                        <div class="content">
+                        <img src="veeraj_shah.jpg" alt="Leadership figure: Veeraj Shah" class="about-team-img">
+                        <h5 class = "content-header">
+                            Name
+                        </h5>
+                        <h6 class="content-sub">
+                            Design
+                        </h6>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="team-button-container"><button class="team-button">See our pitch at CUNY demo day</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12" style="background-color:#F0F0F0;"> <!--PUZZLE PIECE - Four circles, side by side, responsive-->
+        <div class="about-page-team-inner">
+            <p class="about-page-heading">Our Board of Directors</h1>
+                <div class="col-13" style="padding: 20px;">
+                    <div class="content">
+                    <img src="veeraj_shah.jpg" alt="" style="width: 150px; object-fit: cover;height:150px;border-radius: 50%">
+                    <h5 class = "content-header">
+                        Name
+                    </h5>
+                    <h6 class="content-sub">
+                        Leadership
+                    </h6>
+                    </div>
+                </div>
+                <div class="col-13" style="padding: 20px;">
+                    <div class="content">
+                    <img src="veeraj_shah.jpg" alt="" style="width: 150px; object-fit: cover;height:150px;border-radius: 50%">
+                    <h5 class = "content-header">
+                        Name
+                    </h5>
+                    <h6 class="content-sub">
+                        Leadership
+                    </h6>
+                    </div>
+                </div>
+
+                <div class="col-13" style="padding: 20px;">
+                    <div class="content">
+                    <img src="veeraj_shah.jpg" alt="" style="width: 150px; object-fit: cover;height:150px;border-radius: 50%">
+                    <h5 class = "content-header">
+                        Name
+                    </h5>
+                    <h6 class="content-sub">
+                        Leadership
+                    </h6>
+                    </div>
+                </div>
+
+                <div class="col-13" style="padding: 20px;">
+                    <div class="content">
+                    <img src="veeraj_shah.jpg" alt="" style="width: 150px; object-fit: cover;height:150px;border-radius: 50%">
+                    <h5 class = "content-header">
+                        Name
+                    </h5>
+                    <h6 class="content-sub">
+                        Leadership
+                    </h6>
+                    </div>
+                </div>
+
+                <div class="col-13" style="padding: 20px;">
+                    <div class="content">
+                    <img src="veeraj_shah.jpg" alt="" style="width: 150px; object-fit: cover;height:150px;border-radius: 50%">
+                    <h5 class = "content-header">
+                        Name
+                    </h5>
+                    <h6 class="content-sub">
+                        Leadership
+                    </h6>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="team-button-container"><button class="team-button"><a href="mailto:chathealth1@gmail.com" style="text-decoration:none;color:black" target="on_blank">Join Our Team!</a></button></div>
+                </div>
+        </div>
+
+    </div>
+
+
+    <div class="col-12 footer-container-outer"> <!--PUZZLE PIECE - space for high-res image-->
+      <div class="col-4 footer-logo" style="margin-top: 10px;">
+          chat health<br>
+          <div style="margin: 10px;">
+          <img src="facebook.png" style="max-height: 25px;">
+          <img src="instagram.png" style="max-height: 25px;">
+          </div>
+      </div>
+
+      <div class="col-4 footer-links">
+        <ul>
+          <li>Universities</li>
+          <li>Students</li>
+          <li>Contact</li>
+          <li>About</li>
+        </ul>
+      </div>
+
+      <div class="col-4">
+        <div class="team-button-container"><button class="partner-button" style="background-color: #9AC9F4; color: white; border: none;">Join The Pilot</button></div>
+      </div>
+
+
+    </div>
+    <div class="col-12" style="width: 100%; margin: 0; padding: 5px; background-color: #5A5B68; color: white; font-size: 12px; text-align: center;">
+      © 2021 Chat Health
+    </div>
+
+
+
+
+    <script src="menu.js">
+    </script>
+
+</body>
